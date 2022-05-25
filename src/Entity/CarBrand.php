@@ -66,6 +66,13 @@ class CarBrand
 
     public function removeCar(CarModel $car_model)
     {
-        $car_model->setBrand(null);
+        $findElement = function($element) use ($car_model) {
+            return $element->getId() === $car_model->getId();
+        };
+        
+        $car = $this->cars->filter($findElement);
+        if($car->count() > 0) {
+            $car->first()->setBrand(null);
+        }
     }
 }
