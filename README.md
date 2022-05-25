@@ -1,5 +1,23 @@
-# ZadanieRekturatacyjneM-odszyProgramista
+# Zadanie Rekturatacyjne Młodszy Programista
 Zadanie rekrutacyjne na stanowisko młodszy programista.
+
+- Autoryzacja: Basic Auth
+- Dodano testowe dane (Fixtures)
+- plik docker-compose.
+
+
+Instalacja:
+- sklonować repozytorium
+- composer install (instalacja zależności)
+- docker-compose up (wysartować obraz dockera z bazą danych)
+- php bin/console doctrine:database:create (utworzenie bazy danych)
+- php bin/console doctrine:migrations:migrate (uruchomienie migracji)
+- php bin/console doctrine:fixtures:load (załadowanie testowych danych)
+
+Dane logowania:
+    login: User_0
+    password: Password_0
+
 
 |Nazwa akcji|Metoda HTTP|URL|Dodatkowe parametry|
 |------------|----------|---|----------------|
