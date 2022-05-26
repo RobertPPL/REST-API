@@ -1,4 +1,4 @@
-# Zadanie Rekturatacyjne Młodszy Programista
+# Zadanie rekrutacyjne Młodszy Programista
 Zadanie rekrutacyjne na stanowisko młodszy programista.
 
 - Autoryzacja: Basic Auth
